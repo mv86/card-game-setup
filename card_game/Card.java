@@ -1,3 +1,5 @@
+package card_game;
+
 public class Card {
 
   private SuitType suit;

@@ -1,3 +1,5 @@
+package card_game;
+
 public enum CardRankType {
   ACE,
   TWO,
