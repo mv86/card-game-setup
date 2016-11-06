@@ -16,16 +16,13 @@ public class Dealer {
     return this.name;
   }
 
-  // public ArrayList<Card> getHand(){
-  //   return this.hand
-  // }
-  // public ArrayList<Card> getNewHand(){
-  //   // ArrayList<Card> cardsFromDeck = new Deck.builtDeck().get(1,3);
-  //   hand.add(fullDeck.builtDeck().get(1,3));
-  // };
+  public void setHand(Card card1, Card card2){
+    this.hand.add(card1);
+    this.hand.add(card2);
+  }
 
-  // public int cardInHandCount(){
-  //   return this.hand.size();
-  // }
+  public int countHand(){
+    return this.hand.size();
+  }
 
 }

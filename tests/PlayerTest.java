@@ -5,10 +5,15 @@ import card_game.*;
 public class PlayerTest {
 
   Player player1;
+  Card card1;
+  Card card2;
 
   @Before
   public void before(){
-    player1 = new Player("Player1");//, [[Suit.CLUBS, Rank.ACE],[Suit.HEARTS, Rank.THREE]]);
+    player1 = new Player("Player1");
+    card1 = new Card(Suit.CLUBS, Rank.ACE);
+    card2 = new Card(Suit.HEARTS, Rank.THREE);
+    player1.setHand(card1, card2);
   }
 
   @Test
@@ -16,13 +21,9 @@ public class PlayerTest {
     assertEquals("Player1", player1.getName());
   }
 
-  // @Test 
-  // public void canGetHand() {
-  //   assertEquals([[Suit.CLUBS, Rank.ACE],[Suit.HEARTS, Rank.THREE]], player1.getHand());
-  // }
-
-  // @Test
-  // public void canGetCardRank(){
-  //   assertEquals(CardRankType.ACE, card.getCardRank());
-  // }
+  @Test
+  public void playerHasTwoCards(){
+    assertEquals(2, player1.countHand());
+  }
+  
 }
