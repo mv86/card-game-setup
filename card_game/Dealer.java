@@ -1,12 +1,12 @@
 package card_game;
 import java.util.*;
 
-public class Player {
+public class Dealer {
 
   private String name;
   private ArrayList<Card> hand;
 
-  public Player(String name){
+  public Dealer(String name){
     this.name = name;
     this.hand = new ArrayList<Card>();
   }

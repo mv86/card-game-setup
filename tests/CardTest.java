@@ -8,16 +8,16 @@ public class CardTest {
 
   @Before
   public void before(){
-    card = new Card(SuitType.CLUBS, CardRankType.ACE);
+    card = new Card(Suit.CLUBS, Rank.ACE);
   }
 
   @Test
   public void canGetSuit(){
-    assertEquals(SuitType.CLUBS, card.getSuit());
+    assertEquals(Suit.CLUBS, card.getSuit());
   }
 
   @Test
   public void canGetCardRank(){
-    assertEquals(CardRankType.ACE, card.getCardRank());
+    assertEquals(Rank.ACE, card.getCardRank());
   }
 }

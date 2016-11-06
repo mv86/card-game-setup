@@ -1,6 +1,6 @@
 package card_game;
 
-public enum CardRankType {
+public enum Rank {
   ACE,
   TWO,
   THREE,

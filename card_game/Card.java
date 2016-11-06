@@ -2,20 +2,20 @@ package card_game;
 
 public class Card {
 
-  private SuitType suit;
-  private CardRankType cardRank;
+  private Suit suit;
+  private Rank rank;
 
-  public Card(SuitType suit, CardRankType cardRank) {
+  public Card(Suit suit, Rank rank) {
     this.suit = suit;
-    this.cardRank = cardRank;
+    this.rank = rank;
   }
 
-  public SuitType getSuit(){
+  public Suit getSuit(){
     return this.suit;
   }
 
-  public CardRankType getCardRank(){
-    return this.cardRank;
+  public Rank getCardRank(){
+    return this.rank;
   }
 
 }

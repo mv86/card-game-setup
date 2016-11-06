@@ -1,8 +1,9 @@
 package card_game;
+import card_game.*;
 import java.util.*;
 
 
-public abstract class Deck{
+public class Deck {
 
   private ArrayList<Card> fullDeck;
 
@@ -10,4 +11,21 @@ public abstract class Deck{
     this.fullDeck = new ArrayList<Card>();
   }
 
+  public void shuffleDeck() {
+    Collections.shuffle(fullDeck);
+  }
+
+  public ArrayList<Card> buildDeck() {
+    for(Suit suit : Suit.values()) {
+      for (Rank rank : Rank.values()) {
+        fullDeck.add(new Card(suit, rank));
+      }
+    }
+    shuffleDeck();
+    return fullDeck;
+      // shuffleDeck();
+    // System.out.println(fullDeck);
+  }
 }
+
+

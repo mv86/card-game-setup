@@ -1,6 +1,6 @@
 package card_game;
 
-public enum SuitType {
+public enum Suit {
   CLUBS,
   DIAMONDS,
   HEARTS,
