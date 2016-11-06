@@ -18,7 +18,8 @@ public class Deck {
   public void buildDeck() {
     for(Suit suit : Suit.values()) {
       for (Rank rank : Rank.values()) {
-        fullDeck.add(new Card(suit, rank));
+        int value = 0;
+        fullDeck.add(new Card(suit, rank, value));
       }
     }
     shuffleDeck();

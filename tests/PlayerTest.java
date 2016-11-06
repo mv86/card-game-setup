@@ -11,8 +11,8 @@ public class PlayerTest {
   @Before
   public void before(){
     player1 = new Player("Player1");
-    card1 = new Card(Suit.CLUBS, Rank.ACE);
-    card2 = new Card(Suit.HEARTS, Rank.THREE);
+    card1 = new Card(Suit.CLUBS, Rank.ACE, 0);
+    card2 = new Card(Suit.HEARTS, Rank.THREE, 0);
     player1.setHand(card1, card2);
   }
 
@@ -25,5 +25,10 @@ public class PlayerTest {
   public void playerHasTwoCards(){
     assertEquals(2, player1.countHand());
   }
-  
+
+  @Test
+  public void playerPointsInStartHand(){
+    assertEquals(14, player1.pointsInStartHand(card1, card2));
+  }
+
 }

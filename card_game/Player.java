@@ -25,8 +25,12 @@ public class Player {
     return this.hand.size();
   }
 
-  // public int cardInHandCount(){
-  //   return this.hand.size();
-  // }
+  public int pointsInStartHand(Card card1, Card card2){
+    int points = 0;
+    int card1Points = card1.setCardValue();
+    int card2Points = card2.setCardValue();
+    points = (card1Points + card2Points);
+    return points;
+  }
 
 }

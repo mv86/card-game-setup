@@ -11,8 +11,8 @@ public class DealerTest {
   @Before
   public void before(){
     dealer = new Dealer("Dealer");
-    card1 = new Card(Suit.DIAMONDS, Rank.FOUR);
-    card1 = new Card(Suit.SPADES, Rank.SIX);
+    card1 = new Card(Suit.DIAMONDS, Rank.FOUR, 0);
+    card1 = new Card(Suit.SPADES, Rank.SIX, 0);
     dealer.setHand(card1, card2);
   }
 
