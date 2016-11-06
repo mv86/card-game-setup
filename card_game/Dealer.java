@@ -1,5 +1,6 @@
 package card_game;
 import java.util.*;
+import card_game.*;
 
 public class Dealer {
 
@@ -15,8 +16,16 @@ public class Dealer {
     return this.name;
   }
 
-  public int cardInHandCount(){
-    return this.hand.size();
-  }
+  // public ArrayList<Card> getHand(){
+  //   return this.hand
+  // }
+  // public ArrayList<Card> getNewHand(){
+  //   // ArrayList<Card> cardsFromDeck = new Deck.builtDeck().get(1,3);
+  //   hand.add(fullDeck.builtDeck().get(1,3));
+  // };
+
+  // public int cardInHandCount(){
+  //   return this.hand.size();
+  // }
 
 }

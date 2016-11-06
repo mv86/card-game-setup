@@ -15,16 +15,22 @@ public class Deck {
     Collections.shuffle(fullDeck);
   }
 
-  public ArrayList<Card> buildDeck() {
+  public void buildDeck() {
     for(Suit suit : Suit.values()) {
       for (Rank rank : Rank.values()) {
         fullDeck.add(new Card(suit, rank));
       }
     }
     shuffleDeck();
+  }
+
+  public ArrayList<Card> builtDeck() {
+    buildDeck();
     return fullDeck;
-      // shuffleDeck();
-    // System.out.println(fullDeck);
+  }
+
+  public int deckCount(){
+    return this.fullDeck.size();
   }
 }
 

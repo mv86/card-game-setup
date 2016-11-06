@@ -8,13 +8,18 @@ public class PlayerTest {
 
   @Before
   public void before(){
-    player1 = new Player("Player1");
+    player1 = new Player("Player1");//, [[Suit.CLUBS, Rank.ACE],[Suit.HEARTS, Rank.THREE]]);
   }
 
   @Test
   public void canGetName(){
     assertEquals("Player1", player1.getName());
   }
+
+  // @Test 
+  // public void canGetHand() {
+  //   assertEquals([[Suit.CLUBS, Rank.ACE],[Suit.HEARTS, Rank.THREE]], player1.getHand());
+  // }
 
   // @Test
   // public void canGetCardRank(){
