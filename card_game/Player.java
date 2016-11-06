@@ -26,11 +26,11 @@ public class Player {
   }
 
   public int pointsInStartHand(Card card1, Card card2){
-    int points = 0;
-    int card1Points = card1.setCardValue();
-    int card2Points = card2.setCardValue();
-    points = (card1Points + card2Points);
-    return points;
+    int handTotal = 0;
+    int card1Value = card1.setCardValue();
+    int card2Value = card2.setCardValue();
+    handTotal = (card1Value + card2Value);
+    return handTotal;
   }
 
 }

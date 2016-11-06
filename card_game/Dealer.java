@@ -25,4 +25,12 @@ public class Dealer {
     return this.hand.size();
   }
 
+  public int pointsInStartHand(Card card1, Card card2){
+    int handTotal = 0;
+    int card1Value = card1.setCardValue();
+    int card2Value = card2.setCardValue();
+    handTotal = (card1Value + card2Value);
+    return handTotal;
+  }
+
 }

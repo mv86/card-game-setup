@@ -17,8 +17,19 @@ public class CardTest {
   }
 
   @Test
-  public void canGetCardRank(){
-    assertEquals(Rank.ACE, card.getCardRank());
+  public void canGetRank(){
+    assertEquals(Rank.ACE, card.getRank());
+  }
+
+  @Test 
+  public void canGetInitialValue(){
+    assertEquals(0, card.getValue());
+  }
+
+  @Test
+  public void canGetGameAssignedValue(){
+    int newCardValue = card.setCardValue();
+    assertEquals(11, newCardValue);
   }
 
 
