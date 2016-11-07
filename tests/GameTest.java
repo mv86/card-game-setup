@@ -5,7 +5,7 @@ import card_game.*;
 public class GameTest {
 
   Game game;
-  Dealer dealer;
+  Player dealer;
   Player player1;
   Card card1;
   Card card2;
@@ -15,7 +15,7 @@ public class GameTest {
   @Before
   public void before(){
     game = new Game();
-    dealer = new Dealer("Dealer");
+    dealer = new Player("Dealer");
     player1 = new Player("Player1");
     card1 = new Card(Suit.CLUBS, Rank.ACE, 0);
     card2 = new Card(Suit.DIAMONDS, Rank.FOUR, 0);
