@@ -58,4 +58,8 @@ public class Card {
     }
   }
 
+  public String showCard(Card card){
+    return card.rank.name() + " of " + card.suit.name();
+    } 
+
 }

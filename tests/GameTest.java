@@ -25,6 +25,14 @@ public class GameTest {
     dealer.setHand(card2, card4); 
   }
 
+  @Test
+  public void showPlayerHand(){
+    String card1Is = card1.showCard(card1);
+    String card3Is = card3.showCard(card3);
+    String player1Hand = player1.showHand(card1Is, card3Is);
+    assertEquals("You have ACE of CLUBS & THREE of HEARTS", player1Hand);
+  }
+
   @Test 
   public void whoHasHighestHand(){
     int player1Score = player1.pointsInStartHand(card1, card3);
